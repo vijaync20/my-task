@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Hostel Enquiry form -Praveen Boys hostel</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 <body>
     <section>
@@ -55,17 +56,94 @@
                 <input type="email" name="" >
                 <span>Email</span>
             </div>
-            <div class="inputBox w100">
+            <div class="inputBox w50">
                 <input type="text" name="" >
                 <span>How did you Reach us?</span>
             </div>
 
+            <div class="gender_sec w50">
+                <span  class="text-lable-style">Gender:</span>
+                <span><input type="radio" name="gender" value="male"> Male</input></span>
+                <span> <input type="radio" name="gender" value="female"> Female</input></span>
+               
+            </div>
+            <div class="form-outline check-box-sec w100">
+                <span class="text-lable-style">Room Choice:</span>
+                <div class="check-box-sec-inner">
+                <div class="form-check-inline seat">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value="1" name="room_choice[]"> 1 Seater
+                    </label>
+                </div>
+                <div class="form-check-inline seat">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value="2" name="room_choice[]"> 2 Sharing
+                    </label>
+                </div>
+                <div class="form-check-inline seat">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value="3" name="room_choice[]"> 3 Seater
+                    </label>
+                </div>
+            
+            </div>
+            <div class="check-box-sec-inner">
+                <div class="form-check-inline seat">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value="4" name="room_choice[]"> 4 Seater
+                    </label>
+                </div>
+                <div class="form-check-inline seat">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value="5" name="room_choice[]"> 1 Seater AC
+                    </label>
+                </div>
+
+                <div class="form-check-inline seat">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value="6" name="room_choice[]"> 2 Seater AC
+                    </label>
+                </div>
+
+           
+
+                </div>
+             
+       
+            <div class="check-box-sec-inner">
+                <div class="form-check-inline seat">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value="7" name="room_choice[]"> 3 Seater AC
+                    </label>
+                </div>
+
+                <div class="form-check-inline seat">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value="8" name="room_choice[]"> 4 Seater AC
+                    </label>
+                </div>
+            </div>
+
+                </div>
             <div class="inputBox w50">
                 <input type="submit" value="Next">
             </div>
 
         </form>
-          
+        <div class="charges-block">
+            <div> 1 Seater<b>/-</b>  </div>
+            <div> 2 Sharing <b>5000/-</b>  </div>
+            <div> 3 Seater<b>/-</b>  </div>
+            <div> 4 Seater<b>2500/-</b>  </div>
+            <div> 1 Seater AC<b>/-</b>  </div>
+            <div> 2 Seater AC<b>/-</b>  </div>
+            <div> 3 Seater AC<b>/-</b>  </div>
+            <div> 4 Seater AC<b>/-</b>  </div>
+        </div>
+<div class="show-box">
+          <img src="./images/rupees-icon.jpg" alt="rupee-icon" height="50" width="50" class="view-charges">
+          <p class="text-charges">Click here to know charges</p>
+        </div>
         </div>
     </div>
 </div>
@@ -73,5 +151,12 @@
 <div class="footer">
     <h5>- Powered by -</h5> <img src="./images/logo.png" class="image2">
 </div>
+
+<script>
+
+$(".show-box").click(function() {
+         $(".charges-block").toggle();
+     });
+</script>
 </body>
 </html>
