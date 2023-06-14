@@ -126,11 +126,70 @@ section .container .contactForm .formBox{
 
 section .container .contactForm .formBox ,.inputBox{
     position: relative;
-    margin: 0 0 35px 0;
+    margin: 0 0 30px 0;
 }
 
 section .container .contactForm .formBox .inputBox.w50{
     width: 47%;
+}
+
+
+.gender_sec.w50{
+    width: 47%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.check-box-sec.w100{
+    width: 100%;
+    display: flex;
+}
+.check-box-sec-inner{
+    width: 20%;
+    margin: 0 12px 20px;
+}
+
+.view-charges{
+    cursor: pointer;
+    position: absolute;
+    bottom: 18px;
+    right: 65px;
+}
+
+.text-charges{
+    cursor: pointer;
+    position: absolute;
+    bottom: 64px;
+    right: 0;
+    color: #03a7f3;
+    font-weight: bold;
+    font-size: 14px;
+    animation: color-change 1s infinite;
+}
+
+@keyframes color-change {
+    0% { color: #03a7f3; }
+    50% { color: #000; }
+    100% { color:#03a7f3; }
+  }
+.charges-block{
+    position: absolute;
+    right: -34px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    padding: 20px 40px;
+    background: aliceblue;
+    bottom: 90px;
+    display: none;
+
+}
+.text-lable-style{
+    color: #03a7f3;;
+    margin-right: 5px;
+    font-weight: 500;
+}
+
+input.form-check-input {
+    margin-right: 5px;
 }
 
 section .container .contactForm .formBox .inputBox.w100{
